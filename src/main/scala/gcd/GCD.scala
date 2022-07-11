@@ -28,7 +28,7 @@ class GCD extends Module {
     x := io.value1
     y := io.value2
   }
-
+  println("x= $x")
   io.outputGCD := x
   io.outputValid := y === 0.U
 }
