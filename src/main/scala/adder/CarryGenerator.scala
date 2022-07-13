@@ -12,9 +12,13 @@ class CarryGen extends Module {
 	})
 	io.pOut := io.pIn
 	io.cOut(0) := io.cIn
-	for (i <- 0 until 4) {
+	for (i <- 0 until 3) {
 		io.cOut(i + 1) := io.gIn(i) + (io.cOut(i) & io.pIn(i))
 	}
+	val cpass = Wire(Bool())
+	val ispass = io.pIn.reduce(_ & _)
+	cpass := io.gIn(3) + (io.cOut(3) & io.pIn(3))
+	io.cOut(4) := Mux(ispass, io.cIn, cpass)
 //	io.cOut(1) := io.gIn(0) +
 //									(io.cOut(0) & io.pIn(0))
 //	io.cOut(2) := io.gIn(1) +
