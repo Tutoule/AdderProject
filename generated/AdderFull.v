@@ -1,12 +1,3 @@
-module PGGen(
-  input   io_in1,
-  input   io_in2,
-  output  io_p,
-  output  io_g
-);
-  assign io_p = io_in1 ^ io_in2; // @[PGGenerator.scala 13:24]
-  assign io_g = io_in1 & io_in2; // @[PGGenerator.scala 14:24]
-endmodule
 module CarryGen(
   input   io_pIn_0,
   input   io_pIn_1,
@@ -43,6 +34,15 @@ module CarryGen(
   assign io_cOut_3 = io_gIn_2 + _io_cOut_3_T; // @[CarryGenerator.scala 16:45]
   assign io_cOut_4 = ispass ? io_cIn : cpass; // @[CarryGenerator.scala 21:26]
 endmodule
+module PGGen(
+  input   io_in1,
+  input   io_in2,
+  output  io_p,
+  output  io_g
+);
+  assign io_p = io_in1 ^ io_in2; // @[PGGenerator.scala 13:24]
+  assign io_g = io_in1 & io_in2; // @[PGGenerator.scala 14:24]
+endmodule
 module Adder4(
   input  [3:0] io_a,
   input  [3:0] io_b,
@@ -50,71 +50,47 @@ module Adder4(
   output [3:0] io_s,
   output       io_cOut
 );
-  wire  PGGen_io_in1; // @[Adder4.scala 14:40]
-  wire  PGGen_io_in2; // @[Adder4.scala 14:40]
-  wire  PGGen_io_p; // @[Adder4.scala 14:40]
-  wire  PGGen_io_g; // @[Adder4.scala 14:40]
-  wire  PGGen_1_io_in1; // @[Adder4.scala 14:40]
-  wire  PGGen_1_io_in2; // @[Adder4.scala 14:40]
-  wire  PGGen_1_io_p; // @[Adder4.scala 14:40]
-  wire  PGGen_1_io_g; // @[Adder4.scala 14:40]
-  wire  PGGen_2_io_in1; // @[Adder4.scala 14:40]
-  wire  PGGen_2_io_in2; // @[Adder4.scala 14:40]
-  wire  PGGen_2_io_p; // @[Adder4.scala 14:40]
-  wire  PGGen_2_io_g; // @[Adder4.scala 14:40]
-  wire  PGGen_3_io_in1; // @[Adder4.scala 14:40]
-  wire  PGGen_3_io_in2; // @[Adder4.scala 14:40]
-  wire  PGGen_3_io_p; // @[Adder4.scala 14:40]
-  wire  PGGen_3_io_g; // @[Adder4.scala 14:40]
-  wire  CarryGen_io_pIn_0; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pIn_1; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pIn_2; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pIn_3; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_gIn_0; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_gIn_1; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_gIn_2; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_gIn_3; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cIn; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pOut_0; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pOut_1; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pOut_2; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_pOut_3; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cOut_0; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cOut_1; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cOut_2; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cOut_3; // @[Adder4.scala 15:30]
-  wire  CarryGen_io_cOut_4; // @[Adder4.scala 15:30]
-  wire  sum_0 = CarryGen_io_pOut_0 ^ CarryGen_io_cOut_0; // @[Adder4.scala 28:44]
-  wire  sum_1 = CarryGen_io_pOut_1 ^ CarryGen_io_cOut_1; // @[Adder4.scala 28:44]
-  wire  sum_2 = CarryGen_io_pOut_2 ^ CarryGen_io_cOut_2; // @[Adder4.scala 28:44]
-  wire  sum_3 = CarryGen_io_pOut_3 ^ CarryGen_io_cOut_3; // @[Adder4.scala 28:44]
-  wire [1:0] io_s_lo = {sum_1,sum_0}; // @[Adder4.scala 30:21]
-  wire [1:0] io_s_hi = {sum_3,sum_2}; // @[Adder4.scala 30:21]
-  PGGen PGGen ( // @[Adder4.scala 14:40]
-    .io_in1(PGGen_io_in1),
-    .io_in2(PGGen_io_in2),
-    .io_p(PGGen_io_p),
-    .io_g(PGGen_io_g)
-  );
-  PGGen PGGen_1 ( // @[Adder4.scala 14:40]
-    .io_in1(PGGen_1_io_in1),
-    .io_in2(PGGen_1_io_in2),
-    .io_p(PGGen_1_io_p),
-    .io_g(PGGen_1_io_g)
-  );
-  PGGen PGGen_2 ( // @[Adder4.scala 14:40]
-    .io_in1(PGGen_2_io_in1),
-    .io_in2(PGGen_2_io_in2),
-    .io_p(PGGen_2_io_p),
-    .io_g(PGGen_2_io_g)
-  );
-  PGGen PGGen_3 ( // @[Adder4.scala 14:40]
-    .io_in1(PGGen_3_io_in1),
-    .io_in2(PGGen_3_io_in2),
-    .io_p(PGGen_3_io_p),
-    .io_g(PGGen_3_io_g)
-  );
-  CarryGen CarryGen ( // @[Adder4.scala 15:30]
+  wire  CarryGen_io_pIn_0; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pIn_1; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pIn_2; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pIn_3; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_gIn_0; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_gIn_1; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_gIn_2; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_gIn_3; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cIn; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pOut_0; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pOut_1; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pOut_2; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_pOut_3; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cOut_0; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cOut_1; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cOut_2; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cOut_3; // @[Adder4.scala 16:30]
+  wire  CarryGen_io_cOut_4; // @[Adder4.scala 16:30]
+  wire  pggenerator_io_in1; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_io_in2; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_io_p; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_io_g; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_1_io_in1; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_1_io_in2; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_1_io_p; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_1_io_g; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_2_io_in1; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_2_io_in2; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_2_io_p; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_2_io_g; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_3_io_in1; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_3_io_in2; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_3_io_p; // @[PGGenerator.scala 20:41]
+  wire  pggenerator_3_io_g; // @[PGGenerator.scala 20:41]
+  wire  sum_0 = CarryGen_io_pOut_0 ^ CarryGen_io_cOut_0; // @[Adder4.scala 34:44]
+  wire  sum_1 = CarryGen_io_pOut_1 ^ CarryGen_io_cOut_1; // @[Adder4.scala 34:44]
+  wire  sum_2 = CarryGen_io_pOut_2 ^ CarryGen_io_cOut_2; // @[Adder4.scala 34:44]
+  wire  sum_3 = CarryGen_io_pOut_3 ^ CarryGen_io_cOut_3; // @[Adder4.scala 34:44]
+  wire [1:0] io_s_lo = {sum_1,sum_0}; // @[Adder4.scala 36:21]
+  wire [1:0] io_s_hi = {sum_3,sum_2}; // @[Adder4.scala 36:21]
+  CarryGen CarryGen ( // @[Adder4.scala 16:30]
     .io_pIn_0(CarryGen_io_pIn_0),
     .io_pIn_1(CarryGen_io_pIn_1),
     .io_pIn_2(CarryGen_io_pIn_2),
@@ -134,25 +110,49 @@ module Adder4(
     .io_cOut_3(CarryGen_io_cOut_3),
     .io_cOut_4(CarryGen_io_cOut_4)
   );
-  assign io_s = {io_s_hi,io_s_lo}; // @[Adder4.scala 30:21]
-  assign io_cOut = CarryGen_io_cOut_4; // @[Adder4.scala 31:17]
-  assign PGGen_io_in1 = io_a[0]; // @[Adder4.scala 20:38]
-  assign PGGen_io_in2 = io_b[0]; // @[Adder4.scala 21:38]
-  assign PGGen_1_io_in1 = io_a[1]; // @[Adder4.scala 20:38]
-  assign PGGen_1_io_in2 = io_b[1]; // @[Adder4.scala 21:38]
-  assign PGGen_2_io_in1 = io_a[2]; // @[Adder4.scala 20:38]
-  assign PGGen_2_io_in2 = io_b[2]; // @[Adder4.scala 21:38]
-  assign PGGen_3_io_in1 = io_a[3]; // @[Adder4.scala 20:38]
-  assign PGGen_3_io_in2 = io_b[3]; // @[Adder4.scala 21:38]
-  assign CarryGen_io_pIn_0 = PGGen_io_p; // @[Adder4.scala 22:33]
-  assign CarryGen_io_pIn_1 = PGGen_1_io_p; // @[Adder4.scala 22:33]
-  assign CarryGen_io_pIn_2 = PGGen_2_io_p; // @[Adder4.scala 22:33]
-  assign CarryGen_io_pIn_3 = PGGen_3_io_p; // @[Adder4.scala 22:33]
-  assign CarryGen_io_gIn_0 = PGGen_io_g; // @[Adder4.scala 23:33]
-  assign CarryGen_io_gIn_1 = PGGen_1_io_g; // @[Adder4.scala 23:33]
-  assign CarryGen_io_gIn_2 = PGGen_2_io_g; // @[Adder4.scala 23:33]
-  assign CarryGen_io_gIn_3 = PGGen_3_io_g; // @[Adder4.scala 23:33]
-  assign CarryGen_io_cIn = io_cIn; // @[Adder4.scala 17:22]
+  PGGen pggenerator ( // @[PGGenerator.scala 20:41]
+    .io_in1(pggenerator_io_in1),
+    .io_in2(pggenerator_io_in2),
+    .io_p(pggenerator_io_p),
+    .io_g(pggenerator_io_g)
+  );
+  PGGen pggenerator_1 ( // @[PGGenerator.scala 20:41]
+    .io_in1(pggenerator_1_io_in1),
+    .io_in2(pggenerator_1_io_in2),
+    .io_p(pggenerator_1_io_p),
+    .io_g(pggenerator_1_io_g)
+  );
+  PGGen pggenerator_2 ( // @[PGGenerator.scala 20:41]
+    .io_in1(pggenerator_2_io_in1),
+    .io_in2(pggenerator_2_io_in2),
+    .io_p(pggenerator_2_io_p),
+    .io_g(pggenerator_2_io_g)
+  );
+  PGGen pggenerator_3 ( // @[PGGenerator.scala 20:41]
+    .io_in1(pggenerator_3_io_in1),
+    .io_in2(pggenerator_3_io_in2),
+    .io_p(pggenerator_3_io_p),
+    .io_g(pggenerator_3_io_g)
+  );
+  assign io_s = {io_s_hi,io_s_lo}; // @[Adder4.scala 36:21]
+  assign io_cOut = CarryGen_io_cOut_4; // @[Adder4.scala 37:17]
+  assign CarryGen_io_pIn_0 = pggenerator_io_p; // @[Adder4.scala 28:33]
+  assign CarryGen_io_pIn_1 = pggenerator_1_io_p; // @[Adder4.scala 28:33]
+  assign CarryGen_io_pIn_2 = pggenerator_2_io_p; // @[Adder4.scala 28:33]
+  assign CarryGen_io_pIn_3 = pggenerator_3_io_p; // @[Adder4.scala 28:33]
+  assign CarryGen_io_gIn_0 = pggenerator_io_g; // @[Adder4.scala 29:33]
+  assign CarryGen_io_gIn_1 = pggenerator_1_io_g; // @[Adder4.scala 29:33]
+  assign CarryGen_io_gIn_2 = pggenerator_2_io_g; // @[Adder4.scala 29:33]
+  assign CarryGen_io_gIn_3 = pggenerator_3_io_g; // @[Adder4.scala 29:33]
+  assign CarryGen_io_cIn = io_cIn; // @[Adder4.scala 18:22]
+  assign pggenerator_io_in1 = io_a[0]; // @[Adder4.scala 27:36]
+  assign pggenerator_io_in2 = io_b[0]; // @[Adder4.scala 27:52]
+  assign pggenerator_1_io_in1 = io_a[1]; // @[Adder4.scala 27:36]
+  assign pggenerator_1_io_in2 = io_b[1]; // @[Adder4.scala 27:52]
+  assign pggenerator_2_io_in1 = io_a[2]; // @[Adder4.scala 27:36]
+  assign pggenerator_2_io_in2 = io_b[2]; // @[Adder4.scala 27:52]
+  assign pggenerator_3_io_in1 = io_a[3]; // @[Adder4.scala 27:36]
+  assign pggenerator_3_io_in2 = io_b[3]; // @[Adder4.scala 27:52]
 endmodule
 module AdderFull(
   input         clock,

@@ -1,5 +1,6 @@
 package adder
 
+import chisel3.DontCare.:=
 import chisel3._
 
 class Adder4 extends Module {
@@ -11,16 +12,21 @@ class Adder4 extends Module {
 		val cOut = Output(Bool())
 	})
 
-	val pgGens = Seq.fill(4)(Module(PGGen()).io)
+//	val pgGens = Seq.fill(4)(Module(PGGen()).io)
 	val carryGen = Module(new CarryGen()).io
 
 	carryGen.cIn := io.cIn
 
+//	for (i <- 0 until 4) {
+//		pgGens(i).in1 := io.a(i).asBool
+//		pgGens(i).in2 := io.b(i).asBool
+//		carryGen.pIn(i) := pgGens(i).p
+//		carryGen.gIn(i) := pgGens(i).g
+//	}
 	for (i <- 0 until 4) {
-		pgGens(i).in1 := io.a(i).asBool
-		pgGens(i).in2 := io.b(i).asBool
-		carryGen.pIn(i) := pgGens(i).p
-		carryGen.gIn(i) := pgGens(i).g
+		val pg = PGGen(io.a(i).asBool, io.b(i).asBool)
+		carryGen.pIn(i) := pg._1
+		carryGen.gIn(i) := pg._2
 	}
 	val sum = Wire(Vec(4, Bool()))
 
