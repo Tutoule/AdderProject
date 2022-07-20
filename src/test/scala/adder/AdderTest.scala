@@ -22,20 +22,20 @@ class AdderTest extends AnyFreeSpec with ChiselScalatestTester {
 		test(new PGGen()){ c =>
 			c.io.in1.poke(false.B)
 			c.io.in2.poke(false.B)
-			c.io.p.expect(false.B)
-			c.io.g.expect(false.B)
+			c.io.pg.p.expect(false.B)
+			c.io.pg.g.expect(false.B)
 			c.io.in1.poke(false.B)
 			c.io.in2.poke(true.B)
-			c.io.p.expect(true.B)
-			c.io.g.expect(false.B)
+			c.io.pg.p.expect(true.B)
+			c.io.pg.g.expect(false.B)
 			c.io.in1.poke(true.B)
 			c.io.in2.poke(false.B)
-			c.io.p.expect(true.B)
-			c.io.g.expect(false.B)
+			c.io.pg.p.expect(true.B)
+			c.io.pg.g.expect(false.B)
 			c.io.in1.poke(true.B)
 			c.io.in2.poke(true.B)
-			c.io.p.expect(false.B)
-			c.io.g.expect(true.B)
+			c.io.pg.p.expect(false.B)
+			c.io.pg.g.expect(true.B)
 		}
 	}
 	"Adder 4 bits should pass" in {
@@ -46,6 +46,7 @@ class AdderTest extends AnyFreeSpec with ChiselScalatestTester {
 						c.io.a.poke(i.U)
 						c.io.b.poke(j.U)
 						c.io.cIn.poke((k == 1).B)
+						c.clock.step(1)
 						c.io.s.expect(((i + j + k) % 16).U)
 						c.io.cOut.expect(((i + j + k) >= 16).compare(false).U)
 					}

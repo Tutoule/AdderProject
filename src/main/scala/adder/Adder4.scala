@@ -12,26 +12,19 @@ class Adder4 extends Module {
 		val cOut = Output(Bool())
 	})
 
-//	val pgGens = Seq.fill(4)(Module(PGGen()).io)
-	val carryGen = Module(new CarryGen()).io
-
-	carryGen.cIn := io.cIn
-
-//	for (i <- 0 until 4) {
-//		pgGens(i).in1 := io.a(i).asBool
-//		pgGens(i).in2 := io.b(i).asBool
-//		carryGen.pIn(i) := pgGens(i).p
-//		carryGen.gIn(i) := pgGens(i).g
-//	}
+	val carryGen = Module(new CarryGen(4)).io
+	val pgIn = Wire(Vec(5, PGBundle()))
+	pgIn(0).p := false.B
+	pgIn(0).g := io.cIn
 	for (i <- 0 until 4) {
-		val pg = PGGen(io.a(i).asBool, io.b(i).asBool)
-		carryGen.pIn(i) := pg._1
-		carryGen.gIn(i) := pg._2
+		pgIn(i + 1) := PGGen(io.a(i).asBool, io.b(i).asBool)
 	}
+	carryGen.pgIn := pgIn
+
 	val sum = Wire(Vec(4, Bool()))
 
 	for (i <- 0 until 4) {
-		sum(i) := carryGen.pOut(i) ^ carryGen.cOut(i)
+		sum(i) := pgIn(i + 1).p ^ carryGen.cOut(i)
 	}
 	io.s := sum.asUInt
 	io.cOut := carryGen.cOut(4)

@@ -1,291 +1,711 @@
 [
   {
     "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4/CarryGen:CarryGen",
+    "original":"~AdderFull|GConnect",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_1_gConnect:GConnect",
     "index":0.0
   },
   {
     "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_3_connect:PGConnect",
+    "index":0.008403361344537815
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_1",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_5_connect:PGConnect",
+    "index":0.01680672268907563
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_2",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_7_connect:PGConnect",
+    "index":0.025210084033613446
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_3",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_9_connect:PGConnect",
+    "index":0.03361344537815126
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_4",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_11_connect:PGConnect",
+    "index":0.04201680672268908
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_5",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_13_connect:PGConnect",
+    "index":0.05042016806722689
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_6",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_15_connect:PGConnect",
+    "index":0.058823529411764705
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_7",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_17_connect:PGConnect",
+    "index":0.06722689075630252
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_8",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_19_connect:PGConnect",
+    "index":0.07563025210084033
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_9",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_21_connect:PGConnect",
+    "index":0.08403361344537816
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_10",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_23_connect:PGConnect",
+    "index":0.09243697478991597
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_11",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_25_connect:PGConnect",
+    "index":0.10084033613445378
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_12",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_27_connect:PGConnect",
+    "index":0.1092436974789916
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_13",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_29_connect:PGConnect",
+    "index":0.11764705882352941
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_14",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_1_31_connect:PGConnect",
+    "index":0.12605042016806722
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_1",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_3_gConnect:GConnect",
+    "index":0.13445378151260504
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_15",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_5_connect:PGConnect",
+    "index":0.14285714285714285
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_16",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_7_connect:PGConnect",
+    "index":0.15126050420168066
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_17",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_9_connect:PGConnect",
+    "index":0.15966386554621848
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_18",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_11_connect:PGConnect",
+    "index":0.16806722689075632
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_19",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_13_connect:PGConnect",
+    "index":0.17647058823529413
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_20",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_15_connect:PGConnect",
+    "index":0.18487394957983194
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_21",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_17_connect:PGConnect",
+    "index":0.19327731092436976
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_22",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_19_connect:PGConnect",
+    "index":0.20168067226890757
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_23",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_21_connect:PGConnect",
+    "index":0.21008403361344538
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_24",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_23_connect:PGConnect",
+    "index":0.2184873949579832
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_25",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_25_connect:PGConnect",
+    "index":0.226890756302521
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_26",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_27_connect:PGConnect",
+    "index":0.23529411764705882
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_27",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_29_connect:PGConnect",
+    "index":0.24369747899159663
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_28",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_2_31_connect:PGConnect",
+    "index":0.25210084033613445
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_2",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_5_gConnect:GConnect",
+    "index":0.2605042016806723
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_3",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_7_gConnect:GConnect",
+    "index":0.2689075630252101
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_29",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_9_connect:PGConnect",
+    "index":0.2773109243697479
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_30",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_11_connect:PGConnect",
+    "index":0.2857142857142857
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_31",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_13_connect:PGConnect",
+    "index":0.29411764705882354
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_32",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_15_connect:PGConnect",
+    "index":0.3025210084033613
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_33",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_17_connect:PGConnect",
+    "index":0.31092436974789917
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_34",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_19_connect:PGConnect",
+    "index":0.31932773109243695
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_35",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_21_connect:PGConnect",
+    "index":0.3277310924369748
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_36",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_23_connect:PGConnect",
+    "index":0.33613445378151263
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_37",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_25_connect:PGConnect",
+    "index":0.3445378151260504
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_38",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_27_connect:PGConnect",
+    "index":0.35294117647058826
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_39",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_29_connect:PGConnect",
+    "index":0.36134453781512604
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_40",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_3_31_connect:PGConnect",
+    "index":0.3697478991596639
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_4",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_7_gConnect:GConnect",
+    "index":0.37815126050420167
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_5",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_9_gConnect:GConnect",
+    "index":0.3865546218487395
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_6",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_11_gConnect:GConnect",
+    "index":0.3949579831932773
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_7",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_13_gConnect:GConnect",
+    "index":0.40336134453781514
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_8",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_15_gConnect:GConnect",
+    "index":0.4117647058823529
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_41",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_17_connect:PGConnect",
+    "index":0.42016806722689076
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_42",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_19_connect:PGConnect",
+    "index":0.42857142857142855
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_43",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_21_connect:PGConnect",
+    "index":0.4369747899159664
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_44",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_23_connect:PGConnect",
+    "index":0.44537815126050423
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_45",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_25_connect:PGConnect",
+    "index":0.453781512605042
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_46",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_27_connect:PGConnect",
+    "index":0.46218487394957986
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_47",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_29_connect:PGConnect",
+    "index":0.47058823529411764
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|PGConnect_48",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_4_31_connect:PGConnect",
+    "index":0.4789915966386555
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_9",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_9_gConnect:GConnect",
+    "index":0.48739495798319327
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_10",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_11_gConnect:GConnect",
+    "index":0.4957983193277311
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_11",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_13_gConnect:GConnect",
+    "index":0.5042016806722689
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_12",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_15_gConnect:GConnect",
+    "index":0.5126050420168067
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_13",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_17_gConnect:GConnect",
+    "index":0.5210084033613446
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_14",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_19_gConnect:GConnect",
+    "index":0.5294117647058824
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_15",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_21_gConnect:GConnect",
+    "index":0.5378151260504201
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_16",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_23_gConnect:GConnect",
+    "index":0.5462184873949579
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_17",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_25_gConnect:GConnect",
+    "index":0.5546218487394958
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_18",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_27_gConnect:GConnect",
+    "index":0.5630252100840336
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_19",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_29_gConnect:GConnect",
+    "index":0.5714285714285714
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_20",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/flow_5_31_gConnect:GConnect",
+    "index":0.5798319327731093
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_21",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_2_gConnect:GConnect",
+    "index":0.5882352941176471
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_22",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_4_gConnect:GConnect",
+    "index":0.5966386554621849
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_23",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_6_gConnect:GConnect",
+    "index":0.6050420168067226
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_24",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_8_gConnect:GConnect",
+    "index":0.6134453781512605
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_25",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_10_gConnect:GConnect",
+    "index":0.6218487394957983
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_26",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_12_gConnect:GConnect",
+    "index":0.6302521008403361
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_27",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_14_gConnect:GConnect",
+    "index":0.6386554621848739
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_28",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_16_gConnect:GConnect",
+    "index":0.6470588235294118
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_29",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_18_gConnect:GConnect",
+    "index":0.6554621848739496
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_30",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_20_gConnect:GConnect",
+    "index":0.6638655462184874
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_31",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_22_gConnect:GConnect",
+    "index":0.6722689075630253
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_32",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_24_gConnect:GConnect",
+    "index":0.680672268907563
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_33",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_26_gConnect:GConnect",
+    "index":0.6890756302521008
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_34",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_28_gConnect:GConnect",
+    "index":0.6974789915966386
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_35",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_30_gConnect:GConnect",
+    "index":0.7058823529411765
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~AdderFull|GConnect_36",
+    "duplicate":"~AdderFull|AdderFull/CarryGen:CarryGen/gOut_32_gConnect:GConnect",
+    "index":0.7142857142857143
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4/pggenerator:PGGen",
-    "index":0.020833333333333332
+    "duplicate":"~AdderFull|AdderFull/pgIn_1_pggenerator:PGGen",
+    "index":0.7310924369747899
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_1",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4/pggenerator_1:PGGen",
-    "index":0.041666666666666664
+    "duplicate":"~AdderFull|AdderFull/pgIn_2_pggenerator:PGGen",
+    "index":0.7394957983193278
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_2",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4/pggenerator_2:PGGen",
-    "index":0.0625
+    "duplicate":"~AdderFull|AdderFull/pgIn_3_pggenerator:PGGen",
+    "index":0.7478991596638656
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_3",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4/pggenerator_3:PGGen",
-    "index":0.08333333333333333
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4",
-    "duplicate":"~AdderFull|AdderFull/Adder4:Adder4",
-    "index":0.10416666666666667
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_1",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4/CarryGen:CarryGen",
-    "index":0.125
+    "duplicate":"~AdderFull|AdderFull/pgIn_4_pggenerator:PGGen",
+    "index":0.7563025210084033
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_4",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4/pggenerator:PGGen",
-    "index":0.14583333333333334
+    "duplicate":"~AdderFull|AdderFull/pgIn_5_pggenerator:PGGen",
+    "index":0.7647058823529411
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_5",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4/pggenerator_1:PGGen",
-    "index":0.16666666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_6_pggenerator:PGGen",
+    "index":0.773109243697479
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_6",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4/pggenerator_2:PGGen",
-    "index":0.1875
+    "duplicate":"~AdderFull|AdderFull/pgIn_7_pggenerator:PGGen",
+    "index":0.7815126050420168
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_7",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4/pggenerator_3:PGGen",
-    "index":0.20833333333333334
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_1",
-    "duplicate":"~AdderFull|AdderFull/Adder4_1:Adder4",
-    "index":0.22916666666666666
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_2",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4/CarryGen:CarryGen",
-    "index":0.25
+    "duplicate":"~AdderFull|AdderFull/pgIn_8_pggenerator:PGGen",
+    "index":0.7899159663865546
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_8",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4/pggenerator:PGGen",
-    "index":0.2708333333333333
+    "duplicate":"~AdderFull|AdderFull/pgIn_9_pggenerator:PGGen",
+    "index":0.7983193277310925
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_9",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4/pggenerator_1:PGGen",
-    "index":0.2916666666666667
+    "duplicate":"~AdderFull|AdderFull/pgIn_10_pggenerator:PGGen",
+    "index":0.8067226890756303
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_10",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4/pggenerator_2:PGGen",
-    "index":0.3125
+    "duplicate":"~AdderFull|AdderFull/pgIn_11_pggenerator:PGGen",
+    "index":0.8151260504201681
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_11",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4/pggenerator_3:PGGen",
-    "index":0.3333333333333333
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_2",
-    "duplicate":"~AdderFull|AdderFull/Adder4_2:Adder4",
-    "index":0.3541666666666667
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_3",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4/CarryGen:CarryGen",
-    "index":0.375
+    "duplicate":"~AdderFull|AdderFull/pgIn_12_pggenerator:PGGen",
+    "index":0.8235294117647058
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_12",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4/pggenerator:PGGen",
-    "index":0.3958333333333333
+    "duplicate":"~AdderFull|AdderFull/pgIn_13_pggenerator:PGGen",
+    "index":0.8319327731092437
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_13",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4/pggenerator_1:PGGen",
-    "index":0.4166666666666667
+    "duplicate":"~AdderFull|AdderFull/pgIn_14_pggenerator:PGGen",
+    "index":0.8403361344537815
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_14",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4/pggenerator_2:PGGen",
-    "index":0.4375
+    "duplicate":"~AdderFull|AdderFull/pgIn_15_pggenerator:PGGen",
+    "index":0.8487394957983193
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_15",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4/pggenerator_3:PGGen",
-    "index":0.4583333333333333
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_3",
-    "duplicate":"~AdderFull|AdderFull/Adder4_3:Adder4",
-    "index":0.4791666666666667
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_4",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4/CarryGen:CarryGen",
-    "index":0.5
+    "duplicate":"~AdderFull|AdderFull/pgIn_16_pggenerator:PGGen",
+    "index":0.8571428571428571
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_16",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4/pggenerator:PGGen",
-    "index":0.5208333333333334
+    "duplicate":"~AdderFull|AdderFull/pgIn_17_pggenerator:PGGen",
+    "index":0.865546218487395
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_17",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4/pggenerator_1:PGGen",
-    "index":0.5416666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_18_pggenerator:PGGen",
+    "index":0.8739495798319328
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_18",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4/pggenerator_2:PGGen",
-    "index":0.5625
+    "duplicate":"~AdderFull|AdderFull/pgIn_19_pggenerator:PGGen",
+    "index":0.8823529411764706
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_19",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4/pggenerator_3:PGGen",
-    "index":0.5833333333333334
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_4",
-    "duplicate":"~AdderFull|AdderFull/Adder4_4:Adder4",
-    "index":0.6041666666666666
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_5",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4/CarryGen:CarryGen",
-    "index":0.625
+    "duplicate":"~AdderFull|AdderFull/pgIn_20_pggenerator:PGGen",
+    "index":0.8907563025210085
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_20",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4/pggenerator:PGGen",
-    "index":0.6458333333333334
+    "duplicate":"~AdderFull|AdderFull/pgIn_21_pggenerator:PGGen",
+    "index":0.8991596638655462
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_21",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4/pggenerator_1:PGGen",
-    "index":0.6666666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_22_pggenerator:PGGen",
+    "index":0.907563025210084
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_22",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4/pggenerator_2:PGGen",
-    "index":0.6875
+    "duplicate":"~AdderFull|AdderFull/pgIn_23_pggenerator:PGGen",
+    "index":0.9159663865546218
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_23",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4/pggenerator_3:PGGen",
-    "index":0.7083333333333334
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_5",
-    "duplicate":"~AdderFull|AdderFull/Adder4_5:Adder4",
-    "index":0.7291666666666666
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_6",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4/CarryGen:CarryGen",
-    "index":0.75
+    "duplicate":"~AdderFull|AdderFull/pgIn_24_pggenerator:PGGen",
+    "index":0.9243697478991597
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_24",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4/pggenerator:PGGen",
-    "index":0.7708333333333334
+    "duplicate":"~AdderFull|AdderFull/pgIn_25_pggenerator:PGGen",
+    "index":0.9327731092436975
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_25",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4/pggenerator_1:PGGen",
-    "index":0.7916666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_26_pggenerator:PGGen",
+    "index":0.9411764705882353
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_26",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4/pggenerator_2:PGGen",
-    "index":0.8125
+    "duplicate":"~AdderFull|AdderFull/pgIn_27_pggenerator:PGGen",
+    "index":0.9495798319327731
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_27",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4/pggenerator_3:PGGen",
-    "index":0.8333333333333334
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_6",
-    "duplicate":"~AdderFull|AdderFull/Adder4_6:Adder4",
-    "index":0.8541666666666666
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|CarryGen_7",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4/CarryGen:CarryGen",
-    "index":0.875
+    "duplicate":"~AdderFull|AdderFull/pgIn_28_pggenerator:PGGen",
+    "index":0.957983193277311
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_28",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4/pggenerator:PGGen",
-    "index":0.8958333333333334
+    "duplicate":"~AdderFull|AdderFull/pgIn_29_pggenerator:PGGen",
+    "index":0.9663865546218487
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_29",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4/pggenerator_1:PGGen",
-    "index":0.9166666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_30_pggenerator:PGGen",
+    "index":0.9747899159663865
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_30",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4/pggenerator_2:PGGen",
-    "index":0.9375
+    "duplicate":"~AdderFull|AdderFull/pgIn_31_pggenerator:PGGen",
+    "index":0.9831932773109243
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~AdderFull|PGGen_31",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4/pggenerator_3:PGGen",
-    "index":0.9583333333333334
-  },
-  {
-    "class":"firrtl.transforms.DedupedResult",
-    "original":"~AdderFull|Adder4_7",
-    "duplicate":"~AdderFull|AdderFull/Adder4_7:Adder4",
-    "index":0.9791666666666666
+    "duplicate":"~AdderFull|AdderFull/pgIn_32_pggenerator:PGGen",
+    "index":0.9915966386554622
   },
   {
     "class":"firrtl.EmitCircuitAnnotation",
@@ -309,8 +729,7 @@
     "sink":"~AdderFull|AdderFull>io_cOut",
     "sources":[
       "~AdderFull|AdderFull>io_a",
-      "~AdderFull|AdderFull>io_b",
-      "~AdderFull|AdderFull>io_cIn"
+      "~AdderFull|AdderFull>io_b"
     ]
   }
 ]
