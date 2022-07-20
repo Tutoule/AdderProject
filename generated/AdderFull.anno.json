@@ -717,19 +717,19 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~AdderFull|AdderFull>io_s",
+    "sink":"~AdderFull|AdderFull>io_dOut_cOut",
     "sources":[
-      "~AdderFull|AdderFull>io_cIn",
-      "~AdderFull|AdderFull>io_a",
-      "~AdderFull|AdderFull>io_b"
+      "~AdderFull|AdderFull>io_dIn_a",
+      "~AdderFull|AdderFull>io_dIn_b"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~AdderFull|AdderFull>io_cOut",
+    "sink":"~AdderFull|AdderFull>io_dOut_s",
     "sources":[
-      "~AdderFull|AdderFull>io_a",
-      "~AdderFull|AdderFull>io_b"
+      "~AdderFull|AdderFull>io_dIn_cIn",
+      "~AdderFull|AdderFull>io_dIn_a",
+      "~AdderFull|AdderFull>io_dIn_b"
     ]
   }
 ]

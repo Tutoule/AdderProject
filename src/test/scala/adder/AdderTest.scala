@@ -81,12 +81,12 @@ class AdderTest extends AnyFreeSpec with ChiselScalatestTester {
 				val cin = Random.nextInt(2)
 				val s = (a + b + cin) % k
 				val cout: Boolean = ((a + b + cin) >> (width)) > 0
-				c.io.a.poke(a.U(width.W))
-				c.io.b.poke(b.U(width.W))
-				c.io.cIn.poke((cin == 1).B)
+				c.io.dIn.a.poke(a.U(width.W))
+				c.io.dIn.b.poke(b.U(width.W))
+				c.io.dIn.cIn.poke((cin == 1).B)
 				c.clock.step(1)
-				c.io.s.expect(s.U(width.W))
-				c.io.cOut.expect(cout.B)
+				c.io.dOut.s.expect(s.U(width.W))
+				c.io.dOut.cOut.expect(cout.B)
 			}
 		}
 	}

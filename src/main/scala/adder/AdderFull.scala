@@ -3,12 +3,20 @@ package adder
 import chisel3._
 import chisel3.util._
 
-class AdderIOBundle(val w: Int) extends Bundle {
-  val a = Input(UInt(w.W))
-  val b = Input(UInt(w.W))
-  val cIn = Input(Bool())
-  val s = Output(UInt(w.W))
-  val cOut = Output(Bool())
+class AdderInputBundle(val w: Int) extends Bundle {
+  val a = UInt(w.W)
+  val b = UInt(w.W)
+  val cIn = Bool()
+}
+
+class AdderOutputBundle(val w: Int) extends Bundle {
+  val s = UInt(w.W)
+  val cOut = Bool()
+}
+
+class  AdderIOBundle(val w: Int) extends Bundle {
+  val dIn = Input(new AdderInputBundle(w))
+  val dOut = Output(new AdderOutputBundle(w))
 }
 object AdderIOBundle {
   def apply(w: Int): AdderIOBundle = {
@@ -25,9 +33,9 @@ class AdderFull(val w: Int) extends Module {
   val carryGen = Module(new CarryGen(w)).io
   val pgIn = Wire(Vec(w + 1, PGBundle()))
   pgIn(0).p := false.B
-  pgIn(0).g := io.cIn
+  pgIn(0).g := io.dIn.cIn
   for (i <- 0 until w) {
-    pgIn(i + 1) := PGGen(io.a(i).asBool, io.b(i).asBool)
+    pgIn(i + 1) := PGGen(io.dIn.a(i).asBool, io.dIn.b(i).asBool)
   }
   carryGen.pgIn := pgIn
 
@@ -35,14 +43,14 @@ class AdderFull(val w: Int) extends Module {
     sum(i) := pgIn(i + 1).p ^ carryGen.cOut(i)
   }
 
-  io.s := sum.asUInt
-  io.cOut := carryGen.cOut(w)
+  io.dOut.s := sum.asUInt
+  io.dOut.cOut := carryGen.cOut(w)
 
-  printf(p"a = ${io.a}\t")
-  printf(p"b = ${io.b}\t")
-  printf(p"cin = ${io.cIn}\t")
-  printf(p"s = ${io.s}\t")
-  printf(p"cout = ${io.cOut}\n")
+  printf(p"a = ${io.dIn.a}\t")
+  printf(p"b = ${io.dIn.b}\t")
+  printf(p"cin = ${io.dIn.cIn}\t")
+  printf(p"s = ${io.dOut.s}\t")
+  printf(p"cout = ${io.dOut.cOut}\n")
 }
 
 object AdderFull {
